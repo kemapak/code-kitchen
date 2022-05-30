@@ -14,4 +14,4 @@ Enjoy
 Kem Apak 5-30-2022
 
 ## Index
-- [Bebugger Demo](src/debugger-demo/README.md)
+- [Debugger Demo](src/debugger-demo/README.md)

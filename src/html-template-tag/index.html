@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Template Tag</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <h1>HTML Template Tag</h1>
+
+    <p>
+        Learn about this template tag on <a url="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template">MDN: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template</a>.
+    </p>
+
+    <p>
+        A better way is to use web components create custom layout, but still this approach is very interesting and foundation
+        of web components.
+    </p>
+
+    <hr>
+
+    <div>
+        <table id="productTable">
+            <thead>
+            <tr>
+                <th>UPC Code</th>
+                <th>Product Name</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!-- cloned template code will go in here -->
+            </tbody>
+        </table>
+    </div>
+
+    <template id="productRowTemplate">
+        <tr>
+            <td class="upc-code"></td>
+            <td></td>
+        </tr>
+    </template>
+</body>
+
+</html>
+
+
+

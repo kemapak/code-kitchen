@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Button Tag Demo</title>
+    <link href="../style/core.css" rel="stylesheet"/>
+    <script src="main.js"></script>
+</head>
+<body>
+<h1>Button Test</h1>
+<hr/>
+<p>
+    This file test the behavior of both button tag and input type=button tag. Open your console to see the behavior.
+</p>
+<p>
+    <code>&lt;button>Button&lt;/button></code> tag by default submits a form if inside a <code>&lt;form&gt;</code> tag.
+    It could also take property <code>type</code>
+    which can have values "submit", "reset" or "button"
+</p>
+<p>
+    <code>&lt;button>Button&lt;/button></code> tag also capable of having other tags inside. You can put images, icons
+    or
+    text inside button tags.
+</p>
+<p>
+    <code>&lt;input type="text"/&gt;</code> tag on the other hand does not submit a form can be used for invoking any
+    action
+    inside a form.
+</p>
+<div>
+    <h2>Inside a form</h2>
+    <form>
+        <label>Label</label>
+        <input placeholder="Enter some text" type="text"/>
+        <button>button tag default (submit)</button>
+        <button type="button">button tag type button</button>
+        <input type="button" value="input tag type button"/>
+    </form>
+</div>
+<div>
+    <h2>Outside a form</h2>
+    <button>button tag outside a form tag behaves like a regular button.</button>
+    <input type="button" value="input tag type button"/>
+</div>
+</body>
+</html>

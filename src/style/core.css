@@ -1,0 +1,39 @@
+h1 {
+    color: darkred;
+    text-align: center;
+}
+
+h2 {
+    color: darkblue;
+    text-align: left;
+}
+
+p {
+    color: #555555;
+    font-size: medium;
+}
+
+div {
+    margin: 10px auto 10px auto;
+    padding: 10px;
+    width: 100%;
+}
+
+/* For all <code> */
+code {
+    font-family: monospace;
+    font-size: inherit;
+    color: #004444;
+}
+
+/* Code in text */
+p > code,
+li > code,
+dd > code,
+td > code {
+    background: #EEEEEE;
+    word-wrap: break-word;
+    box-decoration-break: clone;
+    padding: .1rem .3rem .2rem;
+    border-radius: 3px;
+}

@@ -1,10 +1,6 @@
 button {
 	display: inline-block;
-    width: 80%;
-	background-color: #333333;
-	color: #EEEEEE;
+    width: 50%;
 	margin: 20px;
-	padding: 10px;
-	font-weight: bold;
-	border-radius: 3px;
 }
+

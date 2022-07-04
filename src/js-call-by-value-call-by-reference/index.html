@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Call by Value vs Call by Reference</title>
+    <link rel="stylesheet" href="../style/core.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+<h1>JavaScript Call by Value vs Call by Reference</h1>
+
+<p>
+    This example demonstrates JavaScript function parameter behavior. Call by Value vs call by Reference. Open your console to see the behavior.
+</p>
+<p>
+    Every function call in JavaScript is *call by Value*. Parameter values will and cannot change outside the function scope.
+    The change will only visible inside the function in other words.
+</p>
+<p>
+    Said that, if the parameter is an object type, you can change a property of it. Objects are `Object` and `Array`.
+    So you can alter the object itself inside a function and this will be visible in the parent scope as well as inside
+    the functional scope.
+</p>
+<p>
+    Object Parameter properties behave like call by reference, this makes JavaScript an oddball. Be careful when you use
+    this feature.
+</p>
+
+<hr />
+
+<div>
+    <button id="callByValue">Call by Value</button>
+    <button id="callByReferenceMimickingC">Mimicking Call by Reference by Changing Properties of Objects</button>
+</div>
+
+</body>
+</html>
+
+
+

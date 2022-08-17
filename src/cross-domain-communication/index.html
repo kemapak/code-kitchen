@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Parent</title>
+	<link rel="stylesheet" href="/style/core.css" />
+	<link rel="stylesheet" href="main.css" />
+	<script src="main.js"></script>
+</head>
+<body>
+	<h1>Parent <span id="domain"></span></h1>
+	<section>
+		<h2>Message</h2>
+		<div id="message"></div>
+	</section>
+	<section>
+		<h2>Broadcast Message <button id="sendBroadcastMessageButton" type="button">Alert Broadcast</button></h2>
+		<div id="broadCastMessage"></div>
+	</section>
+	<hr />
+	<iframe src="http://localhost:9000/child.html"></iframe>
+	<iframe src="http://sub.localhost:9000/child.html"></iframe>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Child</title>
+
+    <link rel="stylesheet" href="../style/core.css" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="child.js"></script>
+</head>
+<body>
+    <h1>Child <span id="domain"></span></h1>
+    <section>
+        <h2>Send Message</h2>
+        <div id="message">
+            <input id="messageText" type="text" value="Kem" />&nbsp;<button id="sendMessageButton" type="button">Send message</button>
+            <br/><br/>
+            <button id="updateParentDirectly" type="button">Call parent method directly</button>
+        </div>
+
+    </section>
+    <section>
+        <h2>Broadcast Message <button id="sendBroadcastMessageButton" type="button">Alert Broadcast</button></h2>
+        <div id="broadCastMessage"></div>
+    </section>
+</body>
+</html>

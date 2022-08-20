@@ -1,0 +1,30 @@
+details {
+    margin: 0 0 1rem 0;
+    border: 1px dotted gray;
+    border-radius: 5px;
+    text-align: left;
+}
+
+summary {
+    margin: 0;
+    background: #EEEEEE;
+    cursor: pointer;
+}
+
+summary > * {
+    display: inline-block;
+}
+
+details > * {
+    padding: 0px 5px;
+}
+
+/* Overide from core.css */
+h2 {
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+}
+

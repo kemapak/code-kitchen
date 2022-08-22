@@ -1,0 +1,38 @@
+ul[is="brk-tree"], ul[is="brk-tree"] ul  {
+    list-style-type: none;
+    text-align: left;
+    color: darkslategray;
+}
+
+li::before {
+    display:inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.25rem;
+    content:"";
+}
+
+.open::before, .closed::before {
+    background-size: 1rem 1rem;
+    position: relative;
+    top: 0.22rem;
+    opacity: 0.7;
+}
+
+.open::before {
+    background-image: url(img/down.png);
+}
+
+.closed::before {
+    background-image: url(img/right.png);
+}
+
+li {
+    cursor: text;
+}
+
+ul {
+    list-style-type: square;
+    text-align: left;
+    color: cadetblue;
+}

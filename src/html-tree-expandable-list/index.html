@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tree - Expandable List</title>
+
+  <link href="../style/core.css" rel="stylesheet"/>
+  <link href="main.css" rel="stylesheet"/>
+
+  <script src="main.js" type="module"></script>
+</head>
+<body>
+  <header>
+    <h1>Tree - Expandable List</h1>
+  </header>
+  <main>
+    <p>
+      This is web component that expands the `UL` tag element. Mimics a tree in other words an expandable list.
+    </p>
+    <hr />
+    <div>
+      <h2>Chess Pieces and their initial square names</h2>
+      <ul is="brk-tree">
+        <li>Chess
+          <ul>
+            <li>White
+              <ul>
+                <li>King (1) - e1</li>
+                <li>Queen (1) - d1</li>
+                <li>Rook (2)
+                  <ul>
+                    <li>King Side Rook - h1</li>
+                    <li>Rook - a1</li>
+                  </ul>
+                </li>
+                <li>Knight (2)
+                  <ul>
+                    <li>King Side Knight - g1</li>
+                    <li>Knight - b1</li>
+                  </ul>
+                </li>
+                <li>Bishop (2)
+                  <ul>
+                    <li>Bishop - f1</li>
+                    <li>Bishop - c1</li>
+                  </ul>
+                </li>
+                <li>Pawn (8)
+                  <ul>
+                    <li>Pawn - a2</li>
+                    <li>Pawn - b2</li>
+                    <li>Pawn - c2</li>
+                    <li>Pawn - d2</li>
+                    <li>Pawn - e2</li>
+                    <li>Pawn - f2</li>
+                    <li>Pawn - g2</li>
+                    <li>Pawn - h2</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Black
+              <ul>
+                <li>King (1) - e8</li>
+                <li>Queen (1) - d8</li>
+                <li>Rook (2)
+                  <ul>
+                    <li>King Side Rook - h8</li>
+                    <li>Rook - a8</li>
+                  </ul>
+                </li>
+                <li>Knight (2)
+                  <ul>
+                    <li>King Side Knight - g8</li>
+                    <li>Knight - b8</li>
+                  </ul>
+                </li>
+                <li>Bishop (2)
+                  <ul>
+                    <li>Bishop - f8</li>
+                    <li>Bishop - c8</li>
+                  </ul>
+                </li>
+                <li>Pawn (8)
+                  <ul>
+                    <li>Pawn - a7</li>
+                    <li>Pawn - b7</li>
+                    <li>Pawn - c7</li>
+                    <li>Pawn - d7</li>
+                    <li>Pawn - e7</li>
+                    <li>Pawn - f7</li>
+                    <li>Pawn - g7</li>
+                    <li>Pawn - h7</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <h2>Chess Piece Values</h2>
+      <ul>
+        <li>King - Infinite</li>
+        <li>Queen - 9</li>
+        <li>Rook - 5</li>
+        <li>Knight - 3</li>
+        <li>Bishop - 3</li>
+        <li>Pawn - 1
+          <ul>
+            <li>Pawn can be promoted to any piece except king or pawn when it reaches end of the board.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </main>
+</body>
+</html>

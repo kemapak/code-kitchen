@@ -9,6 +9,8 @@ For more details how to extend an HTML element please take a look at [MDN - Usin
 
 Click the [link](index.html) to open `index.html` with a browser and open developer tools by pressing `option+command+I (⌥+⌘+I)`.
 
+Please note, you must run the application in a server (localhost or remote). In file system, most browsers
+does not allow loading modules.
 
 ---
 Return to [Index](../../README.md)

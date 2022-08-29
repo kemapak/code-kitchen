@@ -1,0 +1,15 @@
+span.textarea-word-count {
+    display: inline-block;
+    width: 9rem;
+    margin-top: 5px;
+    padding: 3px 0 3px 0;
+    position: relative;
+    top: 15px;
+    left: -12rem;
+    font-size: 0.7rem;
+    color: gray;
+}
+
+span.textarea-word-count.alert {
+    color: red;
+}

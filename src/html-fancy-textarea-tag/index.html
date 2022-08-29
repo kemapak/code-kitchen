@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fancy Textarea</title>
+
+    <link href="../style/core.css" rel="stylesheet"/>
+    <link href="main.css" rel="stylesheet"/>
+
+    <script src="main.js" type="module"></script>
+</head>
+<body>
+<header>
+    <h1>Fancy Textarea</h1>
+</header>
+<main>
+    <p>
+        This is web component that expands the `textarea` tag element. Adds optional word count.
+    </p>
+    <hr />
+    <div>
+        <h2>Extended Textarea Tag</h2>
+        <label for="extended">Extended</label>
+        <textarea is="brk-textarea" id="extended" placeholder="Enter some text" maxlength="20">Default text</textarea>
+    </div>
+    <div>
+        <h2>Native Textarea Tag</h2>
+        <label for="native">Native</label>
+        <textarea is="brk-textarea" id="native" placeholder="Enter some text" maxlength="20"></textarea>
+    </div>
+</main>
+</body>
+</html>

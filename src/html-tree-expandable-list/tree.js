@@ -6,11 +6,11 @@
  */
 class Tree extends HTMLUListElement {
     constructor() {
-        // self is the UL element. super() returns the element.
-        self = super();
+
+        super();
 
         // Get all the branches.
-        const uls = Array.from(self.querySelectorAll('ul'));
+        const uls = Array.from(this.querySelectorAll('ul'));
 
         uls.forEach(ul => {
 
@@ -25,7 +25,7 @@ class Tree extends HTMLUListElement {
              */
             li.setAttribute('class', 'closed');
             li.addEventListener('click', (e) => {
-                self.toggle(li, e);
+                this.toggle(li, e);
             });
 
             li.style.cursor = 'pointer';

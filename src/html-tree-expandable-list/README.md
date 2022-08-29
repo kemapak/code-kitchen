@@ -1,6 +1,6 @@
 # HTML Expandable List or Tree web component.
 
-In this sample I expand the HTML `UL` tag to have extra functionality. In other words use the 'decorator' design pattern.
+In this sample I extend the HTML `UL` tag to have extra functionality. In other words use the 'decorator' design pattern.
 It is very cool to see how a simple UL element turn into an expandable list or a tree.
 
 The element is for sample only does not have the necessary and required accessibility properties. 

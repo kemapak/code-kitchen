@@ -23,6 +23,7 @@ Kem Apak 5-30-2022
 - [HTML Native Accordion Tag](src/html-native-accordion-tag/README.md)
 - [HTML Tree / Expandable List](src/html-tree-expandable-list/README.md)
 - [HTML Fancy textarea tag](src/html-fancy-textarea-tag/README.md)
+- [JavaSccript Inheritance via Prototype Chaining](src/js-inheritance-via-prototype-chaining/README.md)
 
 ### Utilities
 - [Performance Probe](src/util/js-probe/README.md)

@@ -19,6 +19,9 @@ console.log(UniqueValueGenerator.getAlphaNumeric(5));
 console.log(UniqueValueGenerator.getAlphaNumeric(6));
 console.log(UniqueValueGenerator.getAlphaNumeric(30));
 
+console.log(UniqueValueGenerator.getLoremIpsum(90));
+console.log(UniqueValueGenerator.getLoremIpsum(400));
+
 console.log(UniqueValueGenerator.getId());
 
 

@@ -33,6 +33,7 @@ Click the [link](index.js) to open `index.js` to view how the code works.
 - `getAlpha(size)`
 - `getNumber(size)`
 - `getAlphaNumeric(size)`
+- `getLoremIpsum(size)`
 - `getId()`
 
 ## Running

@@ -88,7 +88,7 @@ class UniqueValueGenerator {
 
 
 // Enable for browser based applications.
-// export default {UniqueValueGenerator};
+// export {UniqueValueGenerator};
 
 // Enable for node applications.
 module.exports = UniqueValueGenerator;

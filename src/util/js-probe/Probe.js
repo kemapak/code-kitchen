@@ -53,7 +53,7 @@ class Probe {
 }
 
 // Enable for browser based applications.
-// export default {Probe};
+// export {Probe};
 
 // Enable for node applications.
 module.exports = Probe;

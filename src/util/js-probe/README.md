@@ -16,14 +16,14 @@ This simple class can be used to measure performance of certain JavaScript code.
 
 
 ### Browser Applications
-- Enable Browser module export `export default {Probe};` in **Probe.js**
+- Enable Browser module export `export {Probe};` in **Probe.js**
   > Do not forget to disable Node import, native ES5 export in **Probe.js**
 
 - Import Probe into your application.
 
   _For example:_
 
-  `import Probe from './Probe.js';`
+  `import {Probe} from './Probe.js';`
 
 Click the [link](index.js) to open `index.js` to view how the code works.
 

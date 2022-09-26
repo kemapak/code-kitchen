@@ -1,5 +1,5 @@
 // Enable for browser based applications.
-// import Probe from './Probe.js';
+// import {Probe} from './Probe.js';
 
 // Enable for node applications.
 const Probe = require('./Probe.js');

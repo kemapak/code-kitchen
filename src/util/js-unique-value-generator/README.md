@@ -16,14 +16,14 @@ This simple class can be used to generate random values, can be used with unit t
 
 
 ### Browser Applications
-- Enable Browser module export `export default {UniqueValueGenerator};` in **UniqueValueGenerator.js**
+- Enable Browser module export `export {UniqueValueGenerator};` in **UniqueValueGenerator.js**
   > Do not forget to disable Node import, native ES5 export in **UniqueValueGenerator.js**
 
 - Import UniqueValueGenerator into your application.
 
   _For example:_
 
-  `import UniqueValueGenerator from './UniqueValueGenerator.js';`
+  `import {UniqueValueGenerator} from './UniqueValueGenerator.js';`
 
 Click the [link](index.js) to open `index.js` to view how the code works.
 

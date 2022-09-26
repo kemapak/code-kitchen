@@ -1,5 +1,5 @@
 // Enable for browser based applications.
-// import UniqueValueGenerator from './UniqueValueGenerator.js';
+// import {UniqueValueGenerator} from './UniqueValueGenerator.js';
 
 // Enable for node applications.
 const UniqueValueGenerator = require('./UniqueValueGenerator.js');

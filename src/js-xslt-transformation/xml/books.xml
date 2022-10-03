@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+    <book>
+        <isbn>1-565-92869-9</isbn>
+        <category>Programming</category>
+        <release-date>2000-03-21</release-date>
+        <title>Enterprise JAVABEANS</title>
+        <price currency="US">34.95</price>
+    </book>
+    <book>
+        <isbn>1-861-00311-0</isbn>
+        <category>XML</category>
+        <release-date>2000-03-10</release-date>
+        <title>Professional XML</title>
+        <price currency="US">49.99</price>
+    </book>
+    <book>
+        <isbn>0-596-00016-2</isbn>
+        <category>XML</category>
+        <release-date>2000-07-11</release-date>
+        <title>JAVA and XML</title>
+        <price currency="US">39.95</price>
+    </book>
+</books>
+
+

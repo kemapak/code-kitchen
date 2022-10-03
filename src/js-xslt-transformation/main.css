@@ -1,0 +1,40 @@
+table {
+    border-spacing: 0;
+    width: 80%
+}
+
+table thead tr {
+    color: #FFFFFF;
+    background-color: #1A3636;
+}
+
+table thead tr th {
+    text-align: center;
+}
+
+table thead tr th:not(:last-child) {
+    text-align: left;
+    padding-left: 3px;
+    border-right: thin solid #FFFFFF;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tbody tr td {
+    text-align: left;
+    padding: 1px;
+    margin: 0;
+    border-bottom: dotted;
+    border-width: thin;
+}
+
+table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+table tbody td:not(:first-child) {
+    border-left: dotted;
+    border-width: thin;
+}

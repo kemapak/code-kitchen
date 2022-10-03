@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript XSLT Transformation</title>
+    <link rel="stylesheet" href="../style/core.css" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <h1>JavaScript XSLT Transformation</h1>
+
+    <p>
+        This example demonstrates JavaScript XSLT transformation. This API is only available in the browsers.
+        This is mostly useless but also very interesting. This idea can be applied to JSON. If we can transform XML
+        to HTML why cannot we do the same for JSON?
+    </p>
+    <p>
+        Also keep in mind the fetch does not work since it does not have native XML() method. We have to use AJAX.
+    </p>
+    <p>
+        Example data was taken from W3C Schools and books.
+    </p>
+
+    <hr />
+    <section>
+        <h2>Book Collection</h2>
+        <div id="bookCollection"></div>
+        <div>
+            <button type="button" id="transformBookCollection">Show Books</button>
+        </div>
+    </section>
+
+    <hr />
+
+    <section>
+        <h2>CD Collection</h2>
+        <div id="cdCollection"></div>
+        <div>
+            <button type="button" id="transformCdCollection">Show CDs</button>
+        </div>
+    </section>
+</body>
+</html>
+
+
+

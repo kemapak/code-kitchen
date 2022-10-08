@@ -1,0 +1,10 @@
+div#element-to-be-animated {
+    background-color: #FFFF00;
+    border: 5px solid red;
+    border-radius: 5px;
+    width: 50%;
+    height: 30%;
+    text-align: center;
+    vertical-align: center;
+    position: absolute;
+}

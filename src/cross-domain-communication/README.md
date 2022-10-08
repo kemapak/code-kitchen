@@ -2,7 +2,7 @@
 
 Click the [link](index.html) to open `index.html` with a browser and open developer tools by pressing `option+command+I (⌥+⌘+I)`.
 
-This sample code demonstrates how cross domain communication works via `JavaScript` and how to setup `Node/Express` server and your system `hosts` file.
+This sample code demonstrates how cross domain communication works via `JavaScript` and how to set up `Node/Express` server and your system `hosts` file.
 
 This applies to both iframes and different windows, tabs, etc.
 
@@ -13,7 +13,7 @@ Just run `npm install` on your terminal in the same directory to install all nee
 
 ### Hosts File
 To test this first we need to create a fake subdomain. In our hosts file,
-all localhosts point to `127.0.0.x` internal IP addresses. So we can easly add
+all localhosts point to `127.0.0.x` internal IP addresses. So we can easily add
 a subdomain. 
 
 _For example_:
@@ -64,10 +64,10 @@ bc.postMessage('System alert!!! Take cover. Child [' + domain + ']');
 ```
 
 ## References
-- Please check (Cross-Origin Resource Sharing (CORS))[https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS] on Mozilla Developer Network.
-- Also messaging API (Window.postMessage())[https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage]]
-- Also (Broadcast Channel API)[https://developer.mozilla.org/en-US/docs/Web/API/Broadcast_Channel_API]
-- Last but not least (Same-origin policy)[https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy]
+- Please check [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) on Mozilla Developer Network.
+- Also messaging API [Window.postMessage()](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage])
+- Also [Broadcast Channel API](https://developer.mozilla.org/en-US/docs/Web/API/Broadcast_Channel_API)
+- Last but not least [Same-origin policy](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy)
 
 ---
 Return to [Index](../../README.md)

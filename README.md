@@ -6,8 +6,8 @@ Read README.md file for each sample lab. Even the simple HTML/JS/CSS files will 
 Since this is not actual code, I do not have unit tests. I will sometimes combine, HTML, CSS and JavaScript. 
 In real life I will never do this or do not recommend anyone to do it.
 
-I will be moving most of my prototype and test code here, unless they are really really old or irrelevant. _For example:_ Internet Explorer,
-Active X, Browser specific code.
+I will be moving most of my prototype and test code here, unless they are really, really, old or irrelevant. 
+_For example:_ Internet Explorer, Active X, Browser specific code.
 
 Enjoy
 
@@ -26,6 +26,7 @@ Kem Apak 5-30-2022
 - [JavaScript Inheritance via Prototype Chaining](src/js-inheritance-via-prototype-chaining/README.md)
 - [JavaScript XSLT Transformation](src/js-xslt-transformation/README.md)
 - [JavaScript Animation](src/js-animation/README.md)
+- [JavaScript Object Creation](src/js-object-creation/README.md)
 
 ### Utilities
 - [Performance Probe](src/util/js-probe/README.md)

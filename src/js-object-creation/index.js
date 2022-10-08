@@ -25,18 +25,18 @@ let person = Object.create({
     {
         name: {
             value: 'John',
-            writable: true, // Enumerable: If the property is shown during the properties enumeration the object.
-            enumerable: true, // Configurable: If the type of this property can be change or the property can be deleted.
+            writable: true,
+            enumerable: true,
             configurable: false
         }, lastName: {
             value: 'Doe',
-            writable: true, // Enumerable: If the property is shown during the properties enumeration the object.
-            enumerable: true, // Configurable: If the type of this property can be change or the property can be deleted.
+            writable: true,
+            enumerable: true,
             configurable: false
         }, gender: {
             value: 'M',
-            writable: true, // Enumerable: If the property is shown during the properties enumeration the object.
-            enumerable: true, // Configurable: If the type of this property can be change or the property can be deleted.
+            writable: true,
+            enumerable: true,
             configurable: false
         }, age: {
 
@@ -50,8 +50,8 @@ let person = Object.create({
             set: function (newValue) {
                 let value = newValue;
             },
-            enumerable: true, // Enumerable: If the property is shown during the properties enumeration the object.
-            configurable: false // Configurable: If the type of this property can be change or the property can be deleted.
+            enumerable: true,
+            configurable: false
         }
     });
 

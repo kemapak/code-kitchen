@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Tables</title>
+    <link rel="stylesheet" href="../style/core.css" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="Table.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+<h1>Dynamic Tables</h1>
+
+<p>
+    This example utilize HTML templates, you might want to check the code have for <a href="../html-template-tag/index.html">HTML Templates</a>.
+</p>
+
+<hr />
+
+<h2>Add table row; Row entry and delete</h2>
+<div class="table-container">
+    <div class="table-control">
+        <input id="addProductRow" type="button" value="Add Row" />
+    </div>
+    <div class="table">
+        <table id="productTable">
+            <thead>
+            <tr>
+                <th>UPC Code</th>
+                <th>Product Name</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!-- cloned template code will go in here -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<template id="productRowTemplate">
+    <tr>
+        <td><input type="text" /></td>
+        <td><input type="text" /></td>
+        <td><input type="button" value="Remove" /></td>
+    </tr>
+</template>
+
+<hr />
+
+<h2>Form entry; table row view, edit, save</h2>
+<div class="table-container">
+    <div class="table-control">
+        <div>
+            <label>First Name: <input id="firstName" type="text" /></label>
+        </div>
+        <div>
+            <label>Last Name: <input id="lastName" type="text" /></label>
+        </div>
+        <div>
+            <input id="addUser" type="button" value="Add User" />
+        </div>
+    </div>
+    <div class="table">
+        <table id="userTable">
+            <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!-- cloned template code will go in here -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<template id="userRowTemplate">
+    <tr>
+        <td><input type="text" readonly /></td>
+        <td><input type="text" readonly /></td>
+        <td><input type="button" value="Edit" /><input type="button" value="Remove" /></td>
+    </tr>
+</template>
+
+</body>
+</html>
+
+
+

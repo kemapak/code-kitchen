@@ -24,7 +24,7 @@ _For example_:
 ```
 
 You can find your local host file on a Mac under `/etc/hosts`.
-Here is a sample (hosts file)[hosts] added as example.
+Here is a sample [hosts file](hosts) added as example.
 
 ### Node/Express CORS
 You just need to add the `cors package` which exists in the (package.json)[package.json] file in addition to 
@@ -48,7 +48,7 @@ As you can see if you are in the same domain as your child/parent you can access
 parent.displayMessage(value + ' - Same domain can access parent directly, [' + domain + ']');
 ```
 
-You can also send message if you either in the same, sub or any other domain vai Browser Messaging API. As long as
+You can also send message if you either in the same, sub or any other domain via Browser Messaging API. As long as
 you set the CORS correctly on your server. In our case `express server`.
 
 ```

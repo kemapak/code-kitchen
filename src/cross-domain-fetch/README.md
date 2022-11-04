@@ -41,6 +41,9 @@ If you see `Listening on port 9000` on your terminal window you are ready to go!
 
 ## Conclusion
 To use fetch API for different domains you needs to either setup CORS on your web server or use a proxy server.
+To enable or disable handling CORS comment or uncomment the following line in [server.js](server.js)
+
+`server.use(cors({ origin: ["http://localhost:9000", "http://sub.localhost:9000"] }));`
 
 ## References
 - Please check [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) on Mozilla Developer Network.

@@ -4,7 +4,7 @@ const serveStatic = require('serve-static');
 
 let server = express();
 
-/* If disabled the fetch request does not work. */
+/* If disabled the fetch request for subdomain does not work. */
 // server.use(cors({ origin: ["http://localhost:9000", "http://sub.localhost:9000"] }));
 
 server.use('/', serveStatic(__dirname + '/'));

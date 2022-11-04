@@ -34,3 +34,4 @@ Kem Apak 5-30-2022
 - [Performance Probe](src/util/js-probe/README.md)
 - [Unique Value Generator](src/util/js-unique-value-generator/README.md)
 - [Location/URL Utility](src/util/js-location/README.md)
+- [Synchronous File Reader and Writer](src/util/js-synchronous-file-reader-writer/README.md)

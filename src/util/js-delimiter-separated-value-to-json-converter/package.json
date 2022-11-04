@@ -1,0 +1,9 @@
+{
+  "name": "reject-message-converter",
+  "version": "1.0.0",
+  "description": "Convert DSV file to JSON for translation with custom converter.",
+  "main": "convert.js",
+  "keywords": [],
+  "author": "Kem Apak",
+  "license": "ISC"
+}

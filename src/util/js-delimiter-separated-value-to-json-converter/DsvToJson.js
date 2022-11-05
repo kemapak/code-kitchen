@@ -1,4 +1,4 @@
-const FileUtil = require ('./FileUtil');
+const FileUtil = require ('../js-synchronous-file-reader-writer/FileUtil');
 
 /**
  * This static utility class converts a delimiter separated value (DSV) file into JSON.
@@ -11,7 +11,7 @@ class DsvToJson {
     static message = {
         INPUT_FILE_MISSING: 'inputFileLocation parameter is not provided or it is not a String.',
         OUTPUT_FILE_MISSING: 'outputFileLocation parameter is not provided or it is not a String.',
-        DELIMITER_MISSING: 'delimeter parameter is not provided or it is not a String.',
+        DELIMITER_MISSING: 'delimiter parameter is not provided or it is not a String.',
         CALLBACK_IS_NOT_A_FUNCTION: 'Callback you provided is not a function!, please prove a parameter that is a function.'
     }
 
@@ -51,7 +51,7 @@ class DsvToJson {
      *
      * @param inputFileLocation
      * @param outputFileLocation
-     * @param delimiter ',' '\t' or any other delimeter.
+     * @param delimiter ',' '\t' or any other delimiter.
      * @param callback Custom callback function (Optional).
      * @throws Error if inputFileLocation parameter is not provided.
      * @throws Error if outputFileLocation parameter is not provided.

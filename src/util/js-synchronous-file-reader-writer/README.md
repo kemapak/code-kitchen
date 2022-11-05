@@ -9,7 +9,7 @@ asynchronous approach should be taken.
 
 ## Specifications
 
-This is a static class.
+~~This is a static utility class.
 
 ### Class
 - `FileUtil`
@@ -20,7 +20,7 @@ This is a static class.
 
 ### Exceptions and Error Messages
 - `FILE_DOES_NOT_EXITS: ' File does not exists!'`
-- `CANNOT_SAVE_FILE: ' Cannot save file!'`
+- `CANNOT_SAVE_FILE: ' Cannot save file!'`~~
 
 ---
 Return to [Index](../../../README.md)

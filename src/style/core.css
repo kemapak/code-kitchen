@@ -48,6 +48,9 @@ code {
 }
 
 /* Code in text */
+section > code,
+arcticle > code,
+div > code,
 p > code,
 li > code,
 dd > code,

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Specificity</title>
+    <link href="../style/core.css" rel="stylesheet"/>
+
+    <style>
+        .example {
+            box-sizing: border-box;
+            color: aliceblue;
+            padding: 5px 10px;
+            display: inline-block;
+            width: 40%;
+            vertical-align: top;
+            margin: 0px 50px;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+        .blue::after {
+            content: 'I am blue!';
+        }
+
+        .red {
+            background-color: red;
+        }
+        .red::after {
+            content: 'I am read';
+        }
+
+        .blue-important {
+            background-color: blue !important;
+        }
+        .blue-important::after {
+            content: 'I am blue!' !important;
+        }
+
+        .red-important {
+            background-color: red !important;
+        }
+        .red-important::after {
+            content: 'I am read' !important;
+        }
+
+        #redId {
+            background-color: red;
+        }
+        #redId::after {
+            content: 'I am read';
+        }
+
+        #idBrown.blue {
+            background-color: brown;
+        }
+        #idBrown.blue::after {
+            content: 'I am brown';
+        }
+
+        .purple.blue.red {
+            background-color: purple;
+        }
+        .purple.blue.red::after {
+            content: 'I am purple';
+        }
+
+        .gray .blue.red {
+            background-color: gray;
+        }
+        .gray .blue.red::after {
+            content: 'I am gray';
+        }
+
+        #idBlack .blue.red {
+            background-color: black;
+        }
+        #idBlack .blue.red::after {
+            content: 'I am black';
+        }
+
+        #idDarkcyan .blue.red {
+            background-color: darkcyan;
+        }
+        #idDarkcyan .blue.red::after {
+            content: 'I am darkcyan';
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>CSS Specificity</h1>
+</header>
+<main>
+    <p>
+        This file test the behavior of both button tag and input type=button tag. Open your console to see the behavior.
+    </p>
+    <p>
+        <code>&lt;button>Button&lt;/button></code> tag by default submits a form if inside a <code>&lt;form&gt;</code> tag.
+        It could also take property <code>type</code>
+        which can have values "submit", "reset" or "button"
+    </p>
+    <p>
+        <code>&lt;button>Button&lt;/button></code> tag also capable of having other tags inside. You can put images, icons
+        or
+        text inside button tags.
+    </p>
+    <p>
+        <code>&lt;input type="text"/&gt;</code> tag on the other hand does not submit a form can be used for invoking any
+        action
+        inside a form.
+    </p>
+    <hr />
+    <section class="example">
+        <h2>Precedence</h2>
+        <div>
+            <div><code>class="red"</code></div>
+            <div class="red"></div>
+        </div>
+        <div>
+            <div><code>class="blue"</code></div>
+            <div class="blue"></div>
+        </div>
+        <div>
+            <div><code>class="red blue"</code></div>
+            <div class="red blue"></div>
+        </div>
+        <div>
+            <div><code>class="blue red"</code></div>
+            <div class="blue red"></div>
+        </div>
+        <div>
+            <div><code>class="blue-important red"</code></div>
+            <div class="blue-important red"></div>
+        </div>
+        <div>
+            <div><code>class="blue red-important"</code></div>
+            <div class="blue red-important"></div>
+        </div>
+        <div>
+            <div><code>class="blue-important red-important"</code></div>
+            <div class="blue-important red-important"></div>
+        </div>
+        <div>
+            <div><code>id="redId" style="background-color: blue;"</code></div>
+            <div id="redId" style="background-color: blue;">Really??? </div>
+        </div>
+    </section>
+    <section class="example">
+        <h2>Override</h2>
+        <div>
+            <div><code>id="idBrown" class="blue red"</code></div>
+            <div id="idBrown" class="blue red"></div>
+        </div>
+        <div>
+            <div><code>class="purple blue red"</code></div>
+            <div class="purple blue red"></div>
+        </div>
+        <div>
+            <div><code>style="background-color: blue;" class="purple blue red"</code></div>
+            <div style="background-color: blue;" class="purple blue red">Really??? </div>
+        </div>
+        <div class="gray">
+            <div><code>parent class="gray" class="blue red"</code></div>
+            <div class="blue red"></div>
+        </div>
+        <div id="idBlack">
+            <div><code>parent id="idBlack" class="blue red"</code></div>
+            <div class="blue red"></div>
+        </div>
+        <div id="idDarkcyan">
+            <div><code>parent id="idDarkcyan" style="background-color: green" class="blue red"</code></div>
+            <div style="background-color: dimgrey" class="blue red">Really??? </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>

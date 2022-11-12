@@ -29,6 +29,7 @@ Kem Apak 5-30-2022
 - [JavaScript Animation](src/js-animation/README.md)
 - [JavaScript Object Creation](src/js-object-creation/README.md)
 - [HTML Dynamic Table](src/html-dynamic-table/README.md)
+- [CSS Specificity](src/css-specificity/README.md)
 
 ### Utilities
 - [Performance Probe](src/util/js-probe/README.md)

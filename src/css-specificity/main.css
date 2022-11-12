@@ -1,0 +1,79 @@
+.example {
+    box-sizing: border-box;
+    color: aliceblue;
+    padding: 5px 10px;
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+    margin: 0px 50px;
+}
+
+.blue {
+    background-color: blue;
+}
+.blue::after {
+    content: 'I am blue!';
+}
+
+.red {
+    background-color: red;
+}
+.red::after {
+    content: 'I am read';
+}
+
+.blue-important {
+    background-color: blue !important;
+}
+.blue-important::after {
+    content: 'I am blue!' !important;
+}
+
+.red-important {
+    background-color: red !important;
+}
+.red-important::after {
+    content: 'I am read' !important;
+}
+
+#redId {
+    background-color: red;
+}
+#redId::after {
+    content: 'I am read';
+}
+
+#idBrown.blue {
+    background-color: brown;
+}
+#idBrown.blue::after {
+    content: 'I am brown';
+}
+
+.purple.blue.red {
+    background-color: purple;
+}
+.purple.blue.red::after {
+    content: 'I am purple';
+}
+
+.gray .blue.red {
+    background-color: gray;
+}
+.gray .blue.red::after {
+    content: 'I am gray';
+}
+
+#idBlack .blue.red {
+    background-color: black;
+}
+#idBlack .blue.red::after {
+    content: 'I am black';
+}
+
+#idDarkcyan .blue.red {
+    background-color: darkcyan;
+}
+#idDarkcyan .blue.red::after {
+    content: 'I am darkcyan';
+}

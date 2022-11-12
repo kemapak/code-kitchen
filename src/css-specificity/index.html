@@ -5,88 +5,7 @@
     <meta charset="UTF-8">
     <title>CSS Specificity</title>
     <link href="../style/core.css" rel="stylesheet"/>
-
-    <style>
-        .example {
-            box-sizing: border-box;
-            color: aliceblue;
-            padding: 5px 10px;
-            display: inline-block;
-            width: 40%;
-            vertical-align: top;
-            margin: 0px 50px;
-        }
-
-        .blue {
-            background-color: blue;
-        }
-        .blue::after {
-            content: 'I am blue!';
-        }
-
-        .red {
-            background-color: red;
-        }
-        .red::after {
-            content: 'I am read';
-        }
-
-        .blue-important {
-            background-color: blue !important;
-        }
-        .blue-important::after {
-            content: 'I am blue!' !important;
-        }
-
-        .red-important {
-            background-color: red !important;
-        }
-        .red-important::after {
-            content: 'I am read' !important;
-        }
-
-        #redId {
-            background-color: red;
-        }
-        #redId::after {
-            content: 'I am read';
-        }
-
-        #idBrown.blue {
-            background-color: brown;
-        }
-        #idBrown.blue::after {
-            content: 'I am brown';
-        }
-
-        .purple.blue.red {
-            background-color: purple;
-        }
-        .purple.blue.red::after {
-            content: 'I am purple';
-        }
-
-        .gray .blue.red {
-            background-color: gray;
-        }
-        .gray .blue.red::after {
-            content: 'I am gray';
-        }
-
-        #idBlack .blue.red {
-            background-color: black;
-        }
-        #idBlack .blue.red::after {
-            content: 'I am black';
-        }
-
-        #idDarkcyan .blue.red {
-            background-color: darkcyan;
-        }
-        #idDarkcyan .blue.red::after {
-            content: 'I am darkcyan';
-        }
-    </style>
+    <link href="main.css" rel="stylesheet" />
 </head>
 <body>
 <header>
@@ -94,22 +13,16 @@
 </header>
 <main>
     <p>
-        This file test the behavior of both button tag and input type=button tag. Open your console to see the behavior.
+        This code show how the CSS specificity works and how to override it.
+    </p>
+    <p> Remeber inline style always takes precedence and override any class, or ID.</p>
+    <p>
+        Always remember never rely on the order of the classes declared and <code>!important</code> declarations. Things could
+        and will change without your knowledge by other developers and break the look and feel of your applications.
     </p>
     <p>
-        <code>&lt;button>Button&lt;/button></code> tag by default submits a form if inside a <code>&lt;form&gt;</code> tag.
-        It could also take property <code>type</code>
-        which can have values "submit", "reset" or "button"
-    </p>
-    <p>
-        <code>&lt;button>Button&lt;/button></code> tag also capable of having other tags inside. You can put images, icons
-        or
-        text inside button tags.
-    </p>
-    <p>
-        <code>&lt;input type="text"/&gt;</code> tag on the other hand does not submit a form can be used for invoking any
-        action
-        inside a form.
+        A pseudo-element is used to show the colors. For example:
+        <code>.blue::after {content: 'I am blue!';}</code>. This is not show UI, look at the source of this file.
     </p>
     <hr />
     <section class="example">
@@ -170,7 +83,7 @@
             <div class="blue red"></div>
         </div>
         <div id="idDarkcyan">
-            <div><code>parent id="idDarkcyan" style="background-color: green" class="blue red"</code></div>
+            <div><code>parent id="idDarkcyan" style="background-color: dimgrey" class="blue red"</code></div>
             <div style="background-color: dimgrey" class="blue red">Really??? </div>
         </div>
     </section>

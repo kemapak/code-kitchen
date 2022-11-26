@@ -31,6 +31,7 @@ Kem Apak 5-30-2022
 - [HTML Dynamic Table](src/html-dynamic-table/README.md)
 - [CSS Specificity](src/css-specificity/README.md)
 - [HTML Session and Local Storage](src/html-session-local-storage/README.md)
+- [CSS Stripe Background Images](src/css-stripe-background-images/README.md)
 
 ### Utilities
 - [Performance Probe](src/util/js-probe/README.md)

@@ -1,0 +1,32 @@
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.grid-element-left {
+    grid-column: 1 / 2;
+}
+
+.grid-element-right {
+    grid-column: 2 / 2;
+}
+
+.form-control * {
+    vertical-align: middle;
+}
+
+.form-control output {
+    background-color: #EEEEEE;
+    padding: 3px;
+    vertical-align: top;
+}
+
+.form-control div {
+    margin: 3px;
+}
+
+textarea {
+    width: 60%;
+    height: 120px;
+}

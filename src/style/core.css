@@ -5,6 +5,7 @@
 body {
     margin: 0 auto;
     max-width: 80%;
+    box-sizing: border-box;
 }
 
 h1 {

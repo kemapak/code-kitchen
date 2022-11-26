@@ -5,44 +5,19 @@
     <meta charset="UTF-8">
     <title>HTML Session and Local Storage</title>
     <link rel="stylesheet" href="../style/core.css" />
-<!--    <link rel="stylesheet" href="main.css" />-->
+    <link rel="stylesheet" href="main.css" />
     <script src="main.js"></script>
-
-    <style>
-        .grid-wrapper {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
-        }
-
-        .grid-element-left {
-            grid-column: 1 / 2;
-        }
-
-        .grid-element-right {
-            grid-column: 2 / 2;
-        }
-
-        .form-control * {
-            vertical-align: middle;
-        }
-
-        textarea {
-            width: 60%;
-            height: 120px;
-        }
-    </style>
 </head>
 
 <body>
 <h1>HTML Session and Local Storage</h1>
 
 <p>
-    Local storage is persistent, unless it is cleared programmatically or by the user clearing the cache.
+    Local storage is persistent, unless it is cleared programmatically or by the user clearing their browser cache.
 </p>
 <p>
-    Session storage is not persistent and exists during like it names indicates during the session. It could also be cleared
-    programmatically or by the user if the user closes the browser window and end the session or clears the cache.
+    Session storage is not persistent and exists during the session. It could also be cleared
+    programmatically or by the user if the user closes the browser window and end the session or clears their browser cache.
 </p>
 <p>
     Both local and session storage should be retrieved on a page reload, but if you close the browser window and reopen
@@ -50,13 +25,18 @@
 </p>
 
 <hr />
+
 <form>
     <div class="grid-wrapper">
             <div class="grid-element-left">
                 <h2>Session Storage</h2>
-                <p id="sessionStorage"></p>
                 <div class="form-control">
-                    <label>Session Storage: <textarea id="sessionStorageInput"></textarea></label>
+                    <div>
+                        <label>Key <output>userToken</output></label>
+                    </div>
+                    <div>
+                        <label>Value <textarea id="sessionStorageValue"></textarea></label>
+                    </div>
                 </div>
                 <div class="form-control">
                     <button type="button" id="setSessionStorage">Set</button>
@@ -65,9 +45,13 @@
             </div>
             <div class="grid-element-right">
                 <h2>Local Storage</h2>
-                <p id="localStorage"></p>
                 <div class="form-control">
-                    <label>Local Storage: <textarea id="localStorageInput"></textarea></label>
+                    <div>
+                        <label>Key <output>customization</output></label>
+                    </div>
+                    <div>
+                        <label>Value <textarea id="localStorageValue"></textarea></label>
+                    </div>
                 </div>
                 <div class="form-control">
                     <button type="button" id="setLocalStorage">Set</button>

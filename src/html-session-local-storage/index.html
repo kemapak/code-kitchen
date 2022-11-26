@@ -23,6 +23,10 @@
     Both local and session storage should be retrieved on a page reload, but if you close the browser window and reopen
     it session storage will be gone.
 </p>
+<p>
+    Remember to remove <code>sessionStorage</code> programatically when the server session ends,
+    since the session storage is not cleared until the browser is closed.
+</p>
 
 <hr />
 
@@ -30,6 +34,14 @@
     <div class="grid-wrapper">
             <div class="grid-element-left">
                 <h2>Session Storage</h2>
+                <div class="form-control">
+                    <div>
+                        <label>Length <output id="sessionStorageLength"></output></label>
+                    </div>
+                    <div>
+                        <label>key(0) <output id="sessionStorageKey0"></output></label>
+                    </div>
+                </div>
                 <div class="form-control">
                     <div>
                         <label>Key <output>userToken</output></label>
@@ -40,11 +52,17 @@
                 </div>
                 <div class="form-control">
                     <button type="button" id="setSessionStorage">Set</button>
-                    <button type="button" id="clearSessionStorage">Clear</button>
+                    <button type="button" id="removeSessionStorage">Clear</button>
                 </div>
             </div>
             <div class="grid-element-right">
                 <h2>Local Storage</h2>
+                <div class="form-control">
+                    <label>Length <output id="localStorageLength"></output></label>
+                </div>
+                <div class="form-control">
+                    <label>key(0) <output id="localStorageKey0"></output></label>
+                </div>
                 <div class="form-control">
                     <div>
                         <label>Key <output>customization</output></label>
@@ -55,7 +73,7 @@
                 </div>
                 <div class="form-control">
                     <button type="button" id="setLocalStorage">Set</button>
-                    <button type="button" id="clearLocalStorage">Clear</button>
+                    <button type="button" id="removeLocalStorage">Clear</button>
                 </div>
             </div>
     </div>

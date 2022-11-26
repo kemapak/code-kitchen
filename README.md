@@ -30,6 +30,7 @@ Kem Apak 5-30-2022
 - [JavaScript Object Creation](src/js-object-creation/README.md)
 - [HTML Dynamic Table](src/html-dynamic-table/README.md)
 - [CSS Specificity](src/css-specificity/README.md)
+- [HTML Session and Local Storage](src/html-session-local-storage/README.md)
 
 ### Utilities
 - [Performance Probe](src/util/js-probe/README.md)

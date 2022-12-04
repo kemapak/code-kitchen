@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Character Filtering</title>
+    <link href="../style/core.css" rel="stylesheet"/>
+    <script src="main.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>Character Filtering</h1>
+</header>
+
+<main>
+    <p>
+        This file how to prevent user entering "&lt;" and "&gt;". First example dynamically second after the field lost focus.
+    </p>
+    <p>
+        Both approaches could be used for any character. The second one also can be used via node, but showing the example here
+        in browser only.
+    </p>
+
+    <hr />
+
+    <div>
+        <h2>Dynamic Filtering</h2>
+        <form>
+            <textarea id="dynamicFilterExample"></textarea>
+        </form>
+    </div>
+    <div>
+        <h2>When user done editing</h2>
+        <form>
+            <textarea id="staticFilterExample"></textarea>
+            <button id="doStaticFilter">Check Input</button>
+        </form>
+    </div>
+</main>
+
+</body>
+</html>

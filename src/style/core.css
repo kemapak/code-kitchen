@@ -62,3 +62,17 @@ td > code {
     padding: .1rem .3rem .2rem;
     border-radius: 3px;
 }
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.grid-element-left {
+    grid-column: 1 / 2;
+}
+
+.grid-element-right {
+    grid-column: 2 / 2;
+}

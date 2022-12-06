@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Character Filtering</title>
     <link href="../style/core.css" rel="stylesheet"/>
+    <link href="main.css" rel="stylesheet" />
     <script src="main.js"></script>
 </head>
 <body>
@@ -24,18 +25,26 @@
 
     <hr />
 
-    <div>
-        <h2>Dynamic Filtering</h2>
-        <form>
-            <textarea id="dynamicFilterExample"></textarea>
-        </form>
-    </div>
-    <div>
-        <h2>When user done editing</h2>
-        <form>
-            <textarea id="staticFilterExample"></textarea>
-            <button id="doStaticFilter">Check Input</button>
-        </form>
+    <div class="grid-wrapper">
+        <div class="grid-element-left">
+            <h2>Dynamic Filtering</h2>
+            <form>
+                <div>
+                    <textarea id="dynamicFilterExample"></textarea>
+                </div>
+            </form>
+        </div>
+        <div class="grid-element-right">
+            <h2>When user done editing</h2>
+            <form>
+                <div>
+                    <textarea id="staticFilterExample"></textarea>
+                </div>
+                <div>
+                    <button id="doStaticFilter">Check Input</button>
+                </div>
+            </form>
+        </div>
     </div>
 </main>
 

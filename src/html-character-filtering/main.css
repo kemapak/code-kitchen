@@ -16,3 +16,8 @@ textarea {
     width: 60%;
     height: 120px;
 }
+
+.error {
+    color: #cc1166;
+    font-weight: bold;
+}

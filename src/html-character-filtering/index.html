@@ -16,7 +16,7 @@
 
 <main>
     <p>
-        This file how to prevent user entering "&lt;" and "&gt;". First example dynamically second after the field lost focus.
+        This file how to prevent user entering "&lt;" and "&gt;". First example dynamically second after the "Check Input" button is clicked.
     </p>
     <p>
         Both approaches could be used for any character. The second one also can be used via node, but showing the example here
@@ -33,6 +33,8 @@
                     <textarea id="dynamicFilterExample"></textarea>
                 </div>
             </form>
+            <div id="dynamicFilterExampleOutput" class="error">
+            </div>
         </div>
         <div class="grid-element-right">
             <h2>When user done editing</h2>
@@ -41,9 +43,11 @@
                     <textarea id="staticFilterExample"></textarea>
                 </div>
                 <div>
-                    <button id="doStaticFilter">Check Input</button>
+                    <button id="doStaticFilter" type="button">Filter Input</button>
                 </div>
             </form>
+            <div id="staticFilterExampleOutput" class="error">
+            </div>
         </div>
     </div>
 </main>

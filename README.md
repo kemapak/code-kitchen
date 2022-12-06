@@ -32,6 +32,7 @@ Kem Apak 5-30-2022
 - [CSS Specificity](src/css-specificity/README.md)
 - [HTML Session and Local Storage](src/html-session-local-storage/README.md)
 - [CSS Stripe Background Images](src/css-stripe-background-images/README.md)
+- [HTML Character Filtering](src/html-character-filtering/README.md)
 
 ### Utilities
 - [Performance Probe](src/util/js-probe/README.md)

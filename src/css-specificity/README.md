@@ -82,7 +82,7 @@ div {
 ## How to Calculate?
 
 You can most of the time use the list above to determine the CSS specificity. Said that this could get way to complex and 
-detailed which you can check the MDN Specificity documentation I included in the reference.
+detailed which you can check the MDN Specificity documentation which I included in the reference.
 
 There are 2 more rules:
 

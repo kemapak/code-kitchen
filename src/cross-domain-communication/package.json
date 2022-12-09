@@ -1,7 +1,7 @@
 {
   "name": "cross-domain-communication",
   "version": "1.0.0",
-  "description": "Server for mimicing cross, sub domain communication",
+  "description": "Server for mimicking cross, sub domain communication",
   "main": "index.js",
   "scripts": {
     "start": "node server.js"

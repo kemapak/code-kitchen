@@ -1,0 +1,18 @@
+ul {
+    list-style: none;
+    border: 1px solid gray;
+    width: 9rem;
+    margin-top: -15px;
+    padding: 3px 0 3px 0;
+    position: relative;
+    top: 15px;
+    left: 16rem;
+    font-size: 0.7rem;
+    color: gray;
+}
+
+.focus {
+    outline: #00aaee solid 2px;
+}
+
+.

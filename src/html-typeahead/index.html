@@ -3,41 +3,43 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>JavaScript Keyboard Navigation</title>
+    <title>HTML Typeahead</title>
     <link rel="stylesheet" href="../style/core.css" />
     <link rel="stylesheet" href="main.css" />
-    <script src="main.js"></script>
+    <script src="main.js"  type="module"></script>
 </head>
 
 <body>
-<h1>JavaScript Keyboard Navigation</h1>
+<header>
+    <h1>HTML Typeahead</h1>
+</header>
+<main>
+    <p>
+        Learn more about keyboard navigation <a url="https://www.w3.org/WAI/ARIA/apg/patterns/combobox/examples/combobox-autocomplete-none/">W3C: Editable Combobox without Autocomplete Example</a>.
+    </p>
 
-<p>
-    Learn more about about keyboard navigation <a url="https://www.w3.org/WAI/ARIA/apg/patterns/combobox/examples/combobox-autocomplete-none/">MDN: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template</a>.
-</p>
+    <hr />
 
-<hr />
+    <div>
+        <form id="exampleForm">
+            <div>
+                <label for="typeaheadControl">Label: </label>
+                <input type="text" is="brk-typeahead" id="typeaheadControl" />
+            </div>
+            <hr>
+            <div>
+                <input type="search" />
+                <ul role="listbox" id="typeAheadListBox">
+                    <li role="listitem" tabindex="0" data-typeahead-index="0">one</li>
+                    <li role="listitem" tabindex="0" data-typeahead-index="1">two</li>
+                    <li role="listitem" tabindex="0" data-typeahead-index="2">three</li>
+                    <li role="listitem" tabindex="0" data-typeahead-index="3">four</li>
+                </ul>
+            </div>
 
-<div>
-    <table id="productTable">
-        <thead>
-        <tr>
-            <th>UPC Code</th>
-            <th>Product Name</th>
-        </tr>
-        </thead>
-        <tbody>
-        <!-- cloned template code will go in here -->
-        </tbody>
-    </table>
-</div>
-
-<template id="productRowTemplate">
-    <tr>
-        <td class="upc-code"></td>
-        <td></td>
-    </tr>
-</template>
+        </form>
+    </div>
+</main>
 </body>
 
 </html>

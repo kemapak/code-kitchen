@@ -5,15 +5,15 @@
 */
 function load() {
 
-    // Instantiate the table with the existing HTML tbody
-    // and the row with the template
+    // Instantiate the table with the existing HTML tbody and the row with the template
     let template = document.querySelector('#productRowTemplate');
-    let td = template.content.querySelectorAll('td');
 
     // Reference to table body.
     let tbody = document.querySelector('tbody');
 
     for (let productIndex = 0, numberOfProducts = products.length; productIndex < numberOfProducts; productIndex++) {
+
+        let td = template.content.querySelectorAll('td');
 
         td[0].textContent = products[productIndex].upcCode;
         td[1].textContent = products[productIndex].type;

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>HTML PDF Embedder</title>
+    <style>
+        html, body {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }
+        main, div {
+            width: 100%;
+            height: 100%;
+            margin: 0 1px 50px 1px;
+            border: 1px solid lightblue;
+        }
+    </style>
+    <script src="./index.js"></script>
+</head>
+<body>
+<header>
+    <h1>HTML PDF Embedder</h1>
+</header>
+<main>
+    <div>
+        <h2>object</h2>
+        <object id="pdfObject" type="application/pdf" data="" width="800" height="800">object tag place holder</object>
+    </div>
+    <div>
+        <h2>embed</h2>
+        <embed id="pdfEmbed" type="application/pdf" src="" width="800" height="800">embed tag place holder</embed>
+    </div>
+    <div>
+        <h2>URL</h2>
+        <a id="pdfLink" href="javascript:void(0);">PDF Link</a>
+    </div>
+</main>
+</body>
+</html>

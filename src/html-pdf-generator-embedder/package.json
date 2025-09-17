@@ -1,0 +1,13 @@
+{
+  "name": "html-pdf-embedder",
+  "description": "Code that embeds base64 based PDF documents to HTML.",
+  "version": "1.0.0",
+  "scripts": {
+    "server": "node server.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "express": "^4.21.0",
+    "serve-static": "^1.16.2"
+  }
+}

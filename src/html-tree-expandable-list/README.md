@@ -12,5 +12,9 @@ Click the [link](index.html) to open `index.html` with a browser and open develo
 Please note, you must run the application in a server (localhost or remote). In file system, most browsers
 does not allow loading modules.
 
+Added Safari polyfill to support "is" extending a custom element.
+https://github.com/WebReflection/custom-elements by [Andrea Giammarchi](https://github.com/WebReflection)
+
+
 ---
 Return to [Index](../../README.md)

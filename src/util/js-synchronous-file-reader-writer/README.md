@@ -8,8 +8,7 @@ asynchronous approach should be taken.
 > You need to have node installed in your system.
 
 ## Specifications
-
-~~This is a static utility class.
+This is a static utility class.
 
 ### Class
 - `FileUtil`

@@ -1,7 +1,7 @@
 {
-  "name": "html-highcharts-column-chart",
+  "name": "html-highcharts-tree-chart",
   "version": "1.0.0",
-  "description": "Highcharts column chart example in JavaScript, using web components. You need a license for Highcharts.",
+  "description": "Highcharts tree chart example in JavaScript, using web components. You need a license for Highcharts.",
   "main": "index.js",
   "scripts": {
     "server": "node server.js"

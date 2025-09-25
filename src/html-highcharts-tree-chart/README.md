@@ -1,4 +1,4 @@
-# HTML HighCharts Column Chart
+# HTML HighCharts Tree Chart
 
 The application is written in Pure JavaScript, HTML, CSS and using Web Components and Bootstrap.
 

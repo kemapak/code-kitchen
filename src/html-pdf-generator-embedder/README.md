@@ -1,4 +1,4 @@
-# PDF URL generator and embeder
+# PDF URL generator and embedder
 
 ## Objective
 Sometimes we do not get URLs for images, documents, like in the case PDF.
@@ -7,7 +7,7 @@ Unfortunately this does not work for all the browser (Safari is again the usual 
 So this approach generates an URL on the fly and assign the corresponding tag this works for every browser.
 
 ## Installation
-- The examples do require Node JS, please make sure you have it install.
+- The examples do require Node.js, please make sure you have it install.
 - installation `npm install`
 
 ## Running examples
@@ -18,7 +18,7 @@ So this approach generates an URL on the fly and assign the corresponding tag th
 
 ## Usage
 Open your debugger, and analyze the code.
-Please check both JavaScript and HTML files.
+Please check both JavaScript and HTML files as well as the base64 PDF converted text file.
 
 ## Refernces
 - [PDF to Base64 converter I used](https://base64.guru/converter/encode/pdf)
@@ -26,4 +26,5 @@ Please check both JavaScript and HTML files.
 - [JavaScript Blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob)
 - [JavaScript URL](https://developer.mozilla.org/en-US/docs/Web/API/URL)
 
-<sub>Kem Apak</sub>
+---
+Return to [Index](../../README.md)
